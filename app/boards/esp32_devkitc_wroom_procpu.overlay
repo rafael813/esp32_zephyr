@@ -1,12 +1,12 @@
 / {
 
 	aliases{
-		trct5000 = &tcrt5000_node;
+		tcrt5000 = &tcrt5000;
 	};
 
-        tcrt5000_node: tcrt5000 {
+        tcrt5000: tcrt5000 {
                 compatible = "zephyr,tcrt5000";
-                input-gpios = <&gpio0 4 GPIO_INPUT>;
+                input-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
         };
 
 };

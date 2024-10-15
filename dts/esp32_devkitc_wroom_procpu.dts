@@ -2,7 +2,7 @@
         tcrt5000_sensor: tcrt5000-sensor {
                 compatible = "zephyr,tcrt5000-sensor";
                 label = "TCRT5000_LINE_SENSOR";
-		input-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+		input-gpios = <&gpio0 4 GPIO_INPUT>;
         };
 
 };
